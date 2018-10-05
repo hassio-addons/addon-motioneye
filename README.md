@@ -33,6 +33,9 @@ comparison to installing any other Hass.io add-on.
 1. Install the "motionEye" add-on.
 1. Start the "motionEye" add-on
 1. Check the logs of the "motionEye" add-on to see if everything went well.
+1. Click the "OPEN WEB UI" button to open the web interface
+1. Login with username "admin", without a password.
+1. Edit you admin account with a secure password!
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
