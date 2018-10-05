@@ -22,7 +22,12 @@ Simple, elegant and feature-rich CCTV/NVR for your camera's.
 
 ## About
 
-Lorem ipsum
+motionEye is a popular frontend to the camera software called motion. This
+add-on provides both, allowing you to add your camera's to you Hass.io setup.
+
+motionEye is Open Source CCTV and NVR, that is elegant and real easy to use. It
+can be used as a Baby Monitor, Construction Site Montage Viewer,
+Store Camera DVR, Garden Security, and much more.
 
 ## Installation
 
