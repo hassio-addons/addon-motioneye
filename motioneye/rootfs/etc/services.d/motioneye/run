@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: motionEye
+# Runs the motionEye
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+declare -a options
+
+options+=(-c /data/motioneye/motioneye.conf)
+
+# Enable debug mode
+if hass.debug; then
+    options+=(-d)
+fi
+
+# Run the motionEye
+exec meyectl startserver "${options[@]}"
