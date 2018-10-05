@@ -71,7 +71,12 @@ Example add-on configuration:
 
 ```json
 {
-  "log_level": "info"
+  "log_level": "info",
+  "port": 1234,
+  "ssl": true,
+  "certfile": "mycertfile.pem",
+  "keyfile": "mykeyfile.pem",
+  "ipv6": true
 }
 ```
 
@@ -95,10 +100,36 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
+### Option: `port`
+
+By default motionEye runs on port `8765`, this option allows you to change
+the port number.
+
+### Option: `ssl`
+
+Enables/Disables SSL (HTTPS) on the web interface of motionEye. Set it `true`
+to enable it, `false` otherwise.
+
+### Option: `certfile`
+
+The certificate file to use for SSL.
+
+**Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+
+### Option: `keyfile`
+
+The private key file to use for SSL.
+
+**Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+
+### Option: `ipv6`
+
+Set this option too `false` to disable IPv6 support.
+
 ## Embedding into Home Assistant
 
-It is possible to embed the Web Terminal directly into Home Assistant, allowing
-you to access your terminal through the Home Assistant frontend.
+It is possible to embed the motionEye directly into Home Assistant, allowing
+you to access your camera's through the Home Assistant frontend.
 
 Home Assistant provides the `panel_iframe` component, for these purposes.
 
