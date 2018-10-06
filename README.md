@@ -29,6 +29,15 @@ motionEye is Open Source CCTV and NVR, that is elegant and real easy to use. It
 can be used as a Baby Monitor, Construction Site Montage Viewer,
 Store Camera DVR, Garden Security, and much more.
 
+Some cool feature of motionEye:
+
+- Support for a ridiculous amount of cameras, including IP cams.
+- Add multiple cameras by hooking up multiple motionEye instances together.
+  For example, by using MotionEyeOS on a Pi Zero + Pi camera in your network.
+- Supports uploading recording into Google Drive and Dropbox.
+- motion detection, including email notification and scheduling.
+- Can record continuously, motion, or timelapse, with retention settings.
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
