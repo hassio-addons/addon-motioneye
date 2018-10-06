@@ -33,12 +33,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="motionEye" \
-    io.hass.description="Simple, elegant and feature-rich CCTV/NVR for your camera's" \
+    io.hass.description="Simple, elegant and feature-rich CCTV/NVR for your cameras" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Franck Nijhof <frenck@addons.community>" \
-    org.label-schema.description="Simple, elegant and feature-rich CCTV/NVR for your camera's" \
+    org.label-schema.description="Simple, elegant and feature-rich CCTV/NVR for your cameras" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="motionEye" \
     org.label-schema.schema-version="1.0" \

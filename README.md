@@ -18,7 +18,7 @@
 
 ![motionEye screenshot](images/screenshot.png)
 
-Simple, elegant and feature-rich CCTV/NVR for your camera's.
+Simple, elegant and feature-rich CCTV/NVR for your cameras.
 
 ## About
 

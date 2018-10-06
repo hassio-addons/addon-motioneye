@@ -2,7 +2,7 @@
   "name": "motionEye",
   "version": "dev",
   "slug": "motioneye",
-  "description": "Simple, elegant and feature-rich CCTV/NVR for your camera's",
+  "description": "Simple, elegant and feature-rich CCTV/NVR for your cameras",
   "url": "https://community.home-assistant.io/?u=frenck",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8765]",
   "startup": "application",
