@@ -135,6 +135,13 @@ panel_iframe:
     url: https://addres.to.your.hass.io:8765
 ```
 
+## Known issues and limitations
+
+- motionEye does support writing video to network/Samba shares, however,
+  this add-on does not support that yet. This is caused by a privilege
+  limitation of Hass.io. A change for Hass.io is pending to allow this
+  in the near future.
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
