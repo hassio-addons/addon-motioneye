@@ -146,10 +146,6 @@ panel_iframe:
 
 ## Known issues and limitations
 
-- motionEye does support writing video to network/Samba shares, however,
-  this add-on does not support that yet. This is caused by a privilege
-  limitation of Hass.io. A change for Hass.io is pending to allow this
-  in the near future.
 - Local USB or Pi cameras are currently not supported yet. This is
   caused by a limitation of Hass.io. A request for a change has been made
   to make this possible in the future. motionEye(OS) allows you to use a second
