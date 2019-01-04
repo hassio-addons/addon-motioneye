@@ -101,6 +101,10 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
+### Option: `motion_webcontrol`
+
+Enables the motion webcontrol endpoint running on port `7999`
+
 ### Option: `port`
 
 By default motionEye runs on port `8765`, this option allows you to change
