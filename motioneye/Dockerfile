@@ -11,7 +11,7 @@ RUN \
         cifs-utils=6.8-r0 \
         ffmpeg=3.4.4-r1 \
         motion@edge=4.1.1-r1 \
-        nginx=1.14.0-r1 \
+        nginx=1.14.2-r0 \
         py2-curl=7.43.0-r5 \
         py2-pillow=4.3.0-r0 \
         py2-pip=10.0.1-r0 \
