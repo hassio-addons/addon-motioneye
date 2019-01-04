@@ -29,7 +29,7 @@
   ],
   "options": {
     "log_level": "info",
-    "motion_api": false,
+    "motion_webcontrol": false,
     "port": 8765,
     "ssl": true,
     "certfile": "fullchain.pem",
@@ -38,7 +38,7 @@
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
-    "motion_api": "bool",
+    "motion_webcontrol": "bool",
     "port": "port",
     "ssl": "bool",
     "certfile": "str",

@@ -8,7 +8,7 @@ source /usr/lib/hassio-addons/base.sh
 
 readonly motion='/data/motioneye/motion.conf'
 
-if hass.config.true 'motion_api'; then
+if hass.config.true 'motion_webcontrol'; then
     hass.log.info "Enabling motion webcontrol"
     sed -i "s/webcontrol_localhost on/webcontrol_localhost off/" "$motion"
 else
