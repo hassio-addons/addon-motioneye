@@ -24,7 +24,7 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
-# Build arugments
+# Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
