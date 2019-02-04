@@ -3,7 +3,7 @@
   "version": "dev",
   "slug": "motioneye",
   "description": "Simple, elegant and feature-rich CCTV/NVR for your cameras",
-  "url": "https://community.home-assistant.io/t/community-hass-io-add-on-motioneye/71826?u=frenck",
+  "url": "https://github.com/hassio-addons/addon-motioneye",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8765]",
   "startup": "application",
   "arch": [
