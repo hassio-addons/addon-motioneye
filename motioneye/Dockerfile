@@ -5,21 +5,33 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+# Copy Python requirements file
+COPY requirements.txt /tmp/
+
 # Setup base
 RUN \
-    apk add --no-cache \
+    apk add --no-cache --virtual .build-dependencies \
+        curl-dev=7.61.1-r1 \
+        gcc=6.4.0-r9 \
+        jpeg-dev=8-r6 \
+        musl-dev=1.1.19-r10 \
+        py2-pip=10.0.1-r0 \
+        python-dev=2.7.15-r1 \
+    \
+    && apk add --no-cache \
         cifs-utils=6.8-r0 \
         ffmpeg@edge=4.0.2-r0 \
+        libcurl=7.61.1-r1 \
+        libjpeg=8-r6 \
         motion@edge=4.1.1-r1 \
         nginx=1.14.2-r0 \
-        py2-curl=7.43.0-r5 \
-        py2-pillow=4.3.0-r0 \
-        py2-pip=10.0.1-r0 \
+        py-setuptools=39.1.0-r0 \
         python2=2.7.15-r1 \
-        v4l-utils=1.12.6-r1 \
     \
-    && pip2 install \
-        motioneye==0.39.3
+    && pip install --no-cache-dir -r /tmp/requirements.txt \
+    \
+    && apk del --no-cache --purge .build-dependencies \
+    && rm -f -r /tmp/*
 
 # Copy root filesystem
 COPY rootfs /
