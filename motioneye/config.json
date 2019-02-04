@@ -32,16 +32,14 @@
     "port": 8765,
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem",
-    "ipv6": false
+    "keyfile": "privkey.pem"
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
     "port": "port",
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str",
-    "ipv6": "bool"
+    "keyfile": "str"
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"

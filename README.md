@@ -75,8 +75,7 @@ Example add-on configuration:
   "port": 1234,
   "ssl": true,
   "certfile": "mycertfile.pem",
-  "keyfile": "mykeyfile.pem",
-  "ipv6": true
+  "keyfile": "mykeyfile.pem"
 }
 ```
 
@@ -121,10 +120,6 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
-
-### Option: `ipv6`
-
-Set this option too `false` to disable IPv6 support.
 
 ## Embedding into Home Assistant
 
