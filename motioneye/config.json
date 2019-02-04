@@ -3,7 +3,7 @@
   "version": "dev",
   "slug": "motioneye",
   "description": "Simple, elegant and feature-rich CCTV/NVR for your cameras",
-  "url": "https://community.home-assistant.io/t/community-hass-io-add-on-motioneye/71826?u=frenck",
+  "url": "https://github.com/hassio-addons/addon-motioneye",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8765]",
   "startup": "application",
   "arch": [
@@ -33,8 +33,7 @@
     "port": 8765,
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem",
-    "ipv6": false
+    "keyfile": "privkey.pem"
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
@@ -42,8 +41,7 @@
     "port": "port",
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str",
-    "ipv6": "bool"
+    "keyfile": "str"
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"

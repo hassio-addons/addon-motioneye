@@ -23,7 +23,3 @@ fi
 
 port=$(hass.config.get 'port')
 sed -i "s/%%port%%/${port}/g" /etc/nginx/nginx.conf
-
-if ! hass.config.true 'ipv6'; then
-    sed -i '/listen \[::\].*/ d' /etc/nginx/nginx.conf
-fi

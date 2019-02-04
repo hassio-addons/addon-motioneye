@@ -8,7 +8,6 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-[![Bountysource][bountysource-shield]][bountysource]
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
@@ -76,8 +75,7 @@ Example add-on configuration:
   "port": 1234,
   "ssl": true,
   "certfile": "mycertfile.pem",
-  "keyfile": "mykeyfile.pem",
-  "ipv6": true
+  "keyfile": "mykeyfile.pem"
 }
 ```
 
@@ -126,10 +124,6 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
-
-### Option: `ipv6`
-
-Set this option too `false` to disable IPv6 support.
 
 ## Embedding into Home Assistant
 
@@ -212,7 +206,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018 Franck Nijhof
+Copyright (c) 2018-2019 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -236,8 +230,6 @@ SOFTWARE.
 [alpine-packages]: https://pkgs.alpinelinux.org/packages
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[bountysource-shield]: https://img.shields.io/bountysource/team/hassio-addons/activity.svg
-[bountysource]: https://www.bountysource.com/teams/hassio-addons/issues
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/frenck
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-motioneye.svg
@@ -257,7 +249,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-motioneye/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-motioneye.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [microbadger]: https://microbadger.com/images/hassioaddons/motioneye
 [patreon-shield]: https://www.frenck.nl/images/patreon.png
 [patreon]: https://www.patreon.com/
