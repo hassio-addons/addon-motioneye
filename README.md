@@ -104,7 +104,7 @@ you are troubleshooting.
 Enables the motion webcontrol endpoint running on port `7999`.
 
 :warning: MotionEye HTTP webcontrol **DOES NOT** support authentication
-and **DOES NOT** support SSL! Enabling this **ONLY** when you know what
+and **DOES NOT** support SSL! Enable this **ONLY** when you know what
 you are doing! **NEVER, EVERY** expose this port to the outside world!
 
 ### Option: `port`
