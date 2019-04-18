@@ -11,8 +11,8 @@ COPY requirements.txt /tmp/
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=6.4.0-r9 \
         curl-dev=7.64.0-r1 \
+        gcc=8.3.0-r0 \
         jpeg-dev=8-r6 \
         musl-dev=1.1.19-r10 \
         py2-pip=10.0.1-r0 \
