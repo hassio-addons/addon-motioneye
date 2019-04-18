@@ -11,8 +11,8 @@ COPY requirements.txt /tmp/
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        curl-dev=7.61.1-r1 \
         gcc=6.4.0-r9 \
+        curl-dev=7.64.0-r1 \
         jpeg-dev=8-r6 \
         musl-dev=1.1.19-r10 \
         py2-pip=10.0.1-r0 \
@@ -21,7 +21,7 @@ RUN \
     && apk add --no-cache \
         cifs-utils=6.8-r0 \
         ffmpeg@edge=4.0.2-r0 \
-        libcurl=7.61.1-r1 \
+        libcurl=7.64.0-r1 \
         libjpeg=8-r6 \
         mosquitto-clients=1.4.15-r3 \
         motion@edge=4.1.1-r1 \
