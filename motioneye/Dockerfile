@@ -14,9 +14,9 @@ RUN \
         curl-dev=7.64.0-r1 \
         gcc=8.3.0-r0 \
         jpeg-dev=8-r6 \
-        py2-pip=10.0.1-r0 \
         python-dev=2.7.15-r1 \
         musl-dev=1.1.20-r4 \
+        py2-pip=18.1-r0 \
     \
     && apk add --no-cache \
         cifs-utils=6.8-r0 \
