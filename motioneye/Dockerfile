@@ -23,8 +23,8 @@ RUN \
         ffmpeg@edge=4.0.2-r0 \
         libcurl=7.64.0-r1 \
         libjpeg=8-r6 \
-        motion@edge=4.1.1-r1 \
         mosquitto-clients=1.5.6-r0 \
+        motion@edge=4.2.2-r0 \
         nginx=1.14.2-r0 \
         py-setuptools=40.6.3-r0 \
         python2=2.7.15-r3 \
