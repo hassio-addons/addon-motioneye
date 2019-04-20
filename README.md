@@ -4,6 +4,12 @@
 ![Project Stage][project-stage-shield]
 [![License][license-shield]](LICENSE.md)
 
+![Supports armhf Architecture][armhf-shield]
+![Supports armv7 Architecture][armv7-shield]
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports i386 Architecture][i386-shield]
+
 [![GitLab CI][gitlabci-shield]][gitlabci]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
@@ -53,16 +59,6 @@ comparison to installing any other Hass.io add-on.
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
 
-## Docker status
-
-![Supports armhf Architecture][armhf-shield]
-![Supports aarch64 Architecture][aarch64-shield]
-![Supports amd64 Architecture][amd64-shield]
-![Supports i386 Architecture][i386-shield]
-
-[![Docker Layers][layers-shield]][microbadger]
-[![Docker Pulls][pulls-shield]][dockerhub]
-
 ## Configuration
 
 **Note**: _Remember to restart the add-on when the configuration is changed._
@@ -72,7 +68,6 @@ Example add-on configuration:
 ```json
 {
   "log_level": "info",
-  "port": 1234,
   "ssl": true,
   "certfile": "mycertfile.pem",
   "keyfile": "mykeyfile.pem"
@@ -107,11 +102,6 @@ Enables the motion webcontrol endpoint running on port `7999`.
 and **DOES NOT** support SSL! Enable this **ONLY** when you know what
 you are doing! **NEVER, EVER** expose this port to the outside world!
 
-### Option: `port`
-
-By default motionEye runs on port `8765`, this option allows you to change
-the port number.
-
 ### Option: `ssl`
 
 Enables/Disables SSL (HTTPS) on the web interface of motionEye. Set it `true`
@@ -128,23 +118,6 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
-
-## Embedding into Home Assistant
-
-It is possible to embed the motionEye directly into Home Assistant, allowing
-you to access your camera's through the Home Assistant frontend.
-
-Home Assistant provides the `panel_iframe` component, for these purposes.
-
-Example configuration:
-
-```yaml
-panel_iframe:
-  motioneye:
-    title: motionEye
-    icon: mdi:cctv
-    url: https://addres.to.your.hass.io:8765
-```
 
 ## Known issues and limitations
 
@@ -231,9 +204,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[alpine-packages]: https://pkgs.alpinelinux.org/packages
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/frenck
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-motioneye.svg
@@ -264,5 +237,3 @@ SOFTWARE.
 [releases]: https://github.com/hassio-addons/addon-motioneye/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
-[layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/motioneye.svg
-[pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/motioneye.svg
