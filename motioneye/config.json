@@ -8,6 +8,7 @@
   "startup": "application",
   "ingress": true,
   "ingress_port": 0,
+  "panel_icon": "mdi:cctv",
   "homeassistant": "0.92.0b2",
   "arch": [
     "aarch64",
