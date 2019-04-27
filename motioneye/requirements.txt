@@ -2,7 +2,7 @@ backports_abc==0.5
 futures==3.2.0
 jinja2==2.10.1
 MarkupSafe==1.1.1
-motioneye==0.40rc5
+motioneye==0.40
 pillow==6.0.0
 pycurl==7.43.0.2
 singledispatch==3.4.0.3
