@@ -16,7 +16,7 @@ RUN \
         jpeg-dev=8-r6 \
         musl-dev=1.1.20-r4 \
         py2-pip=18.1-r0 \
-        python-dev=2.7.15-r3 \
+        python-dev=2.7.16-r1 \
     \
     && apk add --no-cache \
         cifs-utils=6.8-r0 \
@@ -27,7 +27,7 @@ RUN \
         motion@edge=4.2.2-r0 \
         nginx=1.14.2-r0 \
         py-setuptools=40.6.3-r0 \
-        python2=2.7.15-r3 \
+        python2=2.7.16-r1 \
     \
     && pip install --no-cache-dir -r /tmp/requirements.txt \
     \
