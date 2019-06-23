@@ -26,7 +26,7 @@ RUN \
         mosquitto-clients=1.5.6-r0 \
         motion@edge=4.2.2-r0 \
         nginx=1.14.2-r1 \
-        py-setuptools=40.6.3-r0 \
+        py-setuptools=40.8.0-r1 \
         python2=2.7.16-r1 \
     \
     && pip install --no-cache-dir -r /tmp/requirements.txt \
