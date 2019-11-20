@@ -33,7 +33,6 @@
     "SYS_ADMIN"
   ],
   "map": [
-    "config",
     "share:rw",
     "ssl"
   ],
