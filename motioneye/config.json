@@ -25,7 +25,8 @@
   },
   "boot": "auto",
   "hassio_api": true,
-  "hassio_role": "default",
+  "hassio_role": "homeassistant",
+  "homeassistant_api": true,
   "host_network": true,
   "apparmor": false,
   "privileged": [
