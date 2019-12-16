@@ -48,16 +48,12 @@ Some cool features of motionEye:
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-1. Install the "motionEye" add-on.
+1. Search for the "motionEye" add-on in the Hass.io add-on store and install it.
 1. Start the "motionEye" add-on
 1. Check the logs of the "motionEye" add-on to see if everything went well.
 1. Click the "OPEN WEB UI" button to open the web interface
 1. Login with username "admin", without a password.
 1. Edit your admin account with a secure password!
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
