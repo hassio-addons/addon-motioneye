@@ -11,7 +11,7 @@ COPY requirements.txt /tmp/
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        curl-dev=7.66.0-r0 \
+        curl-dev=7.67.0-r0 \
         gcc=8.3.0-r0 \
         jpeg-dev=8-r6 \
         musl-dev=1.1.22-r3 \
