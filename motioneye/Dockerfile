@@ -21,7 +21,7 @@ RUN \
     && apk add --no-cache \
         cifs-utils=6.9-r0 \
         ffmpeg=4.1.4-r0 \
-        libcurl=7.66.0-r0 \
+        libcurl=7.67.0-r0 \
         libjpeg=8-r6 \
         mosquitto-clients=1.6.3-r0 \
         motion@edge=4.2.2-r0 \
