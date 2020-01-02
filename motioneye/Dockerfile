@@ -14,7 +14,7 @@ RUN \
         curl-dev=7.67.0-r0 \
         gcc=9.2.0-r3 \
         jpeg-dev=8-r6 \
-        musl-dev=1.1.22-r3 \
+        musl-dev=1.1.24-r0 \
         py2-pip=18.1-r0 \
         python-dev=2.7.16-r1 \
     \
