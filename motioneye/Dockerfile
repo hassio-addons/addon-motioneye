@@ -25,7 +25,7 @@ RUN \
         libjpeg=8-r6 \
         mosquitto-clients=1.6.8-r0 \
         motion@edge=4.2.2-r0 \
-        nginx=1.16.1-r4 \
+        nginx=1.16.1-r6 \
         py-setuptools=42.0.2-r0 \
         python2=2.7.16-r3 \
     \
