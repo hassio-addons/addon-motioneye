@@ -42,6 +42,7 @@ Some cool features of motionEye:
 - Supports uploading recording into Google Drive and Dropbox.
 - motion detection, including email notification and scheduling.
 - Can record continuously, motion, or timelapse, with retention settings.
+- Supports "![action buttons](https://github.com/ccrisan/motioneye/wiki/Action-Buttons)" by adding scripts to the config/motioneye directory (recommend using either the ssh or samba addon to achieve this).
 
 ## Installation
 

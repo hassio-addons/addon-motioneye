@@ -6,10 +6,16 @@
 readonly CONF='/data/motioneye/motioneye.conf'
 readonly MOTION='/data/motioneye/motion.conf'
 
-if ! bashio::fs.directory_exists '/data/motioneye'; then
-    cp -R /etc/motioneye/ /data/motioneye/ \
+# Ensure configuration exists
+if ! bashio::fs.directory_exists '/config/motioneye'; then
+    mkdir -p /config/motioneye \
         || bashio::exit.nok 'Failed to create initial motionEye configuration'
+
+    # Copy in template files
+    cp /etc/motioneye/* /config/motioneye/.
 fi
+
+
 
 # Migration
 if bashio::fs.file_exists "${CONF}"; then

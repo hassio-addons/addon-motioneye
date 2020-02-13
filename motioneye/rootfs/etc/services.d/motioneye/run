@@ -8,7 +8,7 @@ declare -a options
 
 bashio::log.info "Starting motionEye..."
 
-options+=(-c /data/motioneye/motioneye.conf)
+options+=(-c /config/motioneye/motioneye.conf)
 
 # Enable debug mode
 if bashio::debug; then
