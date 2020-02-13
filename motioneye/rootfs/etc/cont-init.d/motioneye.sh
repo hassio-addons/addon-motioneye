@@ -21,7 +21,7 @@ fi
 if bashio::fs.file_exists "${CONF}"; then
     bashio::log.debug "Running startup migrations"
     /usr/lib/python2.7/site-packages/motioneye/scripts/migrateconf.sh "${CONF}"
-    find /data/motioneye/ \
+    find /config/motioneye/ \
         -maxdepth 1 \
         -type f \
         -name "thread-*.conf" \
