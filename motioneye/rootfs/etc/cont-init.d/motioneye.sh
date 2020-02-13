@@ -3,8 +3,8 @@
 # Community Hass.io Add-ons: motionEye
 # Creates initial motionEye configuration in case it is non-existing
 # ==============================================================================
-readonly CONF='/data/motioneye/motioneye.conf'
-readonly MOTION='/data/motioneye/motion.conf'
+readonly CONF='/config/motioneye/motioneye.conf'
+readonly MOTION='/config/motioneye/motion.conf'
 
 # Ensure configuration exists
 if ! bashio::fs.directory_exists '/config/motioneye'; then
@@ -14,7 +14,6 @@ if ! bashio::fs.directory_exists '/config/motioneye'; then
     # Copy in template files
     cp /etc/motioneye/* /config/motioneye/.
 fi
-
 
 
 # Migration
