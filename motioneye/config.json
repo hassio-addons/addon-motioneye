@@ -10,13 +10,7 @@
   "ingress_port": 0,
   "panel_icon": "mdi:cctv",
   "homeassistant": "0.92.0b2",
-  "arch": [
-    "aarch64",
-    "amd64",
-    "armhf",
-    "armv7",
-    "i386"
-  ],
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "ports": {
     "80/tcp": null
   },
@@ -28,14 +22,8 @@
   "hassio_role": "default",
   "host_network": true,
   "apparmor": false,
-  "privileged": [
-    "DAC_READ_SEARCH",
-    "SYS_ADMIN"
-  ],
-  "map": [
-    "share:rw",
-    "ssl"
-  ],
+  "privileged": ["DAC_READ_SEARCH", "SYS_ADMIN"],
+  "map": ["share:rw", "ssl"],
   "options": {
     "motion_webcontrol": false,
     "ssl": true,
@@ -43,7 +31,7 @@
     "keyfile": "privkey.pem"
   },
   "schema": {
-    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "motion_webcontrol": "bool",
     "ssl": "bool",
     "certfile": "str",
