@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: motionEye
+# Home Assistant Community Add-on: motionEye
 # Configures NGINX for use with motionEye
 # ==============================================================================
 declare port

@@ -21,7 +21,7 @@
     "80/tcp": null
   },
   "ports_description": {
-    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
+    "80/tcp": "Web interface (Not required for Ingress)"
   },
   "boot": "auto",
   "hassio_api": true,

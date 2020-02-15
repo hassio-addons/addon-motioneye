@@ -1,6 +1,6 @@
 #!/usr/bin/execlineb -S0
 # ==============================================================================
-# Community Hass.io Add-ons: motionEye
+# Home Assistant Community Add-on: motionEye
 # Take down the S6 supervision tree when Nginx fails
 # ==============================================================================
 if -n { s6-test $# -ne 0 }
