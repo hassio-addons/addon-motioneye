@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "motionEye - Community Hass.io Add-on for Home Assistant"
+  description: "motionEye - Home Assistant Community Add-ons"
   homepage: https://addons.community
-  topics: motioneye, motion, cctv, motion-detection, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: motioneye, motion, cctv, motion-detection, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false

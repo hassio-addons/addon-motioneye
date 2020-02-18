@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: motionEye
+# Home Assistant Community Add-on: motionEye
 # Creates initial motionEye configuration in case it is non-existing
 # ==============================================================================
 readonly CONF='/config/motioneye/motioneye.conf'
