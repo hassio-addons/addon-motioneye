@@ -3,24 +3,20 @@
 # Home Assistant Community Add-on: motionEye
 # Creates initial motionEye configuration in case it is non-existing
 # ==============================================================================
-readonly CONF='/config/motioneye/motioneye.conf'
-readonly MOTION='/config/motioneye/motion.conf'
+readonly CONF='/data/motioneye/motioneye.conf'
+readonly MOTION='/data/motioneye/motion.conf'
 
 # Ensure configuration exists
-if ! bashio::fs.directory_exists '/config/motioneye'; then
-    mkdir -p /config/motioneye \
+if ! bashio::fs.directory_exists '/data/motioneye'; then
+    cp -R /etc/motioneye/ /data/motioneye/ \
         || bashio::exit.nok 'Failed to create initial motionEye configuration'
-
-    # Copy in template files
-    cp /etc/motioneye/* /config/motioneye/.
 fi
-
 
 # Migration
 if bashio::fs.file_exists "${CONF}"; then
     bashio::log.debug "Running startup migrations"
     /usr/lib/python2.7/site-packages/motioneye/scripts/migrateconf.sh "${CONF}"
-    find /config/motioneye/ \
+    find /data/motioneye/ \
         -maxdepth 1 \
         -type f \
         -name "thread-*.conf" \
@@ -43,4 +39,25 @@ fi
 if ! bashio::fs.directory_exists '/share/motioneye'; then
     mkdir -p /share/motioneye \
         || bashio::exit.nok 'Failed to create initial motionEye media folder'
+fi
+
+# Remove any existing action buttons before recreating
+for old_action in lock unlock light alarm up right down left zoom preset; do
+  if ls /data/motioneye/${old_action}* > /dev/null 2>&1; then
+	  rm /data/motioneye/${old_action}*
+  fi
+done
+
+# Creates action button scripts if any are configured
+if bashio::config.has_value 'action_buttons'; then
+    bashio::log.info "Configuring action buttons."
+    for button in $(bashio::config "action_buttons|keys"); do
+        BUTTON_TYPE=$(bashio::config "action_buttons[${button}].type")
+	CAMERA_NUMBER=$(bashio::config "action_buttons[${button}].camera")
+	BUTTON_COMMAND=$(bashio::config "action_buttons[${button}].command")
+        bashio::log.debug "File: ${BUTTON_TYPE}_${CAMERA_NUMBER}, Command: ${BUTTON_COMMAND}"
+	echo "#!/bin/bash" > "/data/motioneye/${BUTTON_TYPE}_${CAMERA_NUMBER}"
+	echo "${BUTTON_COMMAND}" >> "/data/motioneye/${BUTTON_TYPE}_${CAMERA_NUMBER}"
+	chmod +x "/data/motioneye/${BUTTON_TYPE}_${CAMERA_NUMBER}"
+    done
 fi

@@ -42,7 +42,7 @@ Some cool features of motionEye:
 - Supports uploading recording into Google Drive and Dropbox.
 - motion detection, including email notification and scheduling.
 - Can record continuously, motion, or timelapse, with retention settings.
-- Supports "![action buttons](https://github.com/ccrisan/motioneye/wiki/Action-Buttons)" by adding scripts to the config/motioneye directory (recommend using either the ssh or samba addon to achieve this).
+- Supports "![action buttons](https://github.com/ccrisan/motioneye/wiki/Action-Buttons)" within the configuration.
 
 ## Installation
 
@@ -114,6 +114,41 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default_
+
+### Option: `action_buttons`
+
+If configured, a script will be created to implement an ![action button](https://github.com/ccrisan/motioneye/wiki/Action-Buttons).
+
+Example action buttons configuration:
+
+```yaml
+action_buttons:
+  - type: light_on
+    camera: 1
+    command: "curl -s 192.168.1.1/index.html?light=ON > /dev/null"
+  - type: light_off
+    camera: 1
+    command: "curl -s 192.168.1.1/index.html?light=OFF > /dev/null"
+```
+
+#### Sub-option: `type`
+
+Type of action button.  Acceptible types are:
+
+- lock and unlock
+- light_on and light_off
+- alarm_on and alarm_off
+- up, right, down, and left
+- zoom_in and zoom_out
+- preset1 to preset9
+
+#### Sub-option: `camera`
+
+The camera identification number. Corresponds to the camera number as set up within the motioneye UI.
+
+#### Sub-option: `command`
+
+The bash shell command to be executed when the button is pressed.
 
 ## Known issues and limitations
 
