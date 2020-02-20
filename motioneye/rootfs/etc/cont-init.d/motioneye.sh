@@ -46,7 +46,7 @@ fi
 
 # Remove any existing action buttons before recreating
 for old_action in lock unlock light alarm up right down left zoom preset; do
-    find /data/motioneye/. -name "old_action*" -delete
+    find /data/motioneye/. -name "${old_action}*" -delete
 done
 
 # Creates action button scripts if any are configured
