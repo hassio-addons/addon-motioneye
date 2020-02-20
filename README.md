@@ -42,7 +42,7 @@ Some cool features of motionEye:
 - Supports uploading recording into Google Drive and Dropbox.
 - motion detection, including email notification and scheduling.
 - Can record continuously, motion, or timelapse, with retention settings.
-- Supports "![action buttons](https://github.com/ccrisan/motioneye/wiki/Action-Buttons)" within the configuration.
+- Supports "[action buttons][motioneye-wiki-action-buttons]" within the configuration.
 
 ## Installation
 
@@ -117,7 +117,7 @@ The private key file to use for SSL.
 
 ### Option: `action_buttons`
 
-If configured, a script will be created to implement an ![action button](https://github.com/ccrisan/motioneye/wiki/Action-Buttons).
+If configured, a script will be created to implement an [action button][motioneye-wiki-action-buttons].
 
 Example action buttons configuration:
 
@@ -267,3 +267,4 @@ SOFTWARE.
 [releases]: https://github.com/hassio-addons/addon-motioneye/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
+[motioneye-wiki-action-buttons]: https://github.com/ccrisan/motioneye/wiki/Action-Buttons
