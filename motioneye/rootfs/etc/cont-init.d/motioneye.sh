@@ -5,7 +5,11 @@
 # ==============================================================================
 readonly CONF='/data/motioneye/motioneye.conf'
 readonly MOTION='/data/motioneye/motion.conf'
+declare button_type
+declare camera_number
+declare button_command
 
+# Ensure configuration exists
 if ! bashio::fs.directory_exists '/data/motioneye'; then
     cp -R /etc/motioneye/ /data/motioneye/ \
         || bashio::exit.nok 'Failed to create initial motionEye configuration'
@@ -38,4 +42,25 @@ fi
 if ! bashio::fs.directory_exists '/share/motioneye'; then
     mkdir -p /share/motioneye \
         || bashio::exit.nok 'Failed to create initial motionEye media folder'
+fi
+
+# Remove any existing action buttons before recreating
+for old_action in lock unlock light alarm up right down left zoom preset; do
+    find /data/motioneye/. -name "${old_action}*" -delete
+done
+
+# Creates action button scripts if any are configured
+if bashio::config.has_value 'action_buttons'; then
+    bashio::log.info "Configuring action buttons."
+    for button in $(bashio::config "action_buttons|keys"); do
+        button_type=$(bashio::config "action_buttons[${button}].type")
+        camera_number=$(bashio::config "action_buttons[${button}].camera")
+        button_command=$(bashio::config "action_buttons[${button}].command")
+        bashio::log.debug "File: ${button_type}_${camera_number}, Command: ${button_command}"
+        {
+            echo "#!/bin/bash"
+            echo "${button_command}"
+        } > "/data/motioneye/${button_type}_${camera_number}"
+        chmod +x "/data/motioneye/${button_type}_${camera_number}"
+    done
 fi
