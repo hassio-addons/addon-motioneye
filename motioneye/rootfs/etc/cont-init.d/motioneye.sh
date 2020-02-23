@@ -58,7 +58,7 @@ if bashio::config.has_value 'action_buttons'; then
         button_command=$(bashio::config "action_buttons[${button}].command")
         bashio::log.debug "File: ${button_type}_${camera_number}, Command: ${button_command}"
         {
-            echo "#!/bin/bash"
+            echo "#!/usr/bin/with-contenv bashio"
             echo "${button_command}"
         } > "/data/motioneye/${button_type}_${camera_number}"
         chmod +x "/data/motioneye/${button_type}_${camera_number}"
