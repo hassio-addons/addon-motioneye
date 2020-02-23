@@ -131,22 +131,22 @@ action_buttons:
     command: "curl -s 192.168.1.1/index.html?light=OFF > /dev/null"
 ```
 
-#### Sub-option: `type`
+#### Sub-option: `action_buttons.type`
 
-Type of action button.  Acceptible types are:
+Type of action button. Acceptable types are:
 
-- lock and unlock
-- light_on and light_off
-- alarm_on and alarm_off
-- up, right, down, and left
-- zoom_in and zoom_out
-- preset1 to preset9
+- `lock` and `unlock`.
+- `light_on` and `light_off`.
+- `alarm_on` and `alarm_off`.
+- `up`, `right`, `down`, and `left`.
+- `zoom_in` and `zoom_out`.
+- `preset1` to `preset9`.
 
-#### Sub-option: `camera`
+#### Sub-option: `action_buttons. camera`
 
-The camera identification number. Corresponds to the camera number as set up within the motioneye UI.
+The camera identification number. Corresponds to the camera number as set up within the motionEye UI.
 
-#### Sub-option: `command`
+#### Sub-option: `action_buttons.command`
 
 The bash shell command to be executed when the button is pressed.
 
@@ -258,6 +258,7 @@ SOFTWARE.
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-motioneye.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
+[motioneye-wiki-action-buttons]: https://github.com/ccrisan/motioneye/wiki/Action-Buttons
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
@@ -267,4 +268,3 @@ SOFTWARE.
 [releases]: https://github.com/hassio-addons/addon-motioneye/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
-[motioneye-wiki-action-buttons]: https://github.com/ccrisan/motioneye/wiki/Action-Buttons
