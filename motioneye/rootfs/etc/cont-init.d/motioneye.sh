@@ -11,12 +11,6 @@ if ! bashio::fs.directory_exists '/data/motioneye'; then
         || bashio::exit.nok 'Failed to create initial motionEye configuration'
 fi
 
-# Needed for existing installations.
-if ! bashio::fs.file_exists "${CONF}"; then
-    cp /etc/motioneye/motion.conf "${CONF}" \
-        || bashio::exit.nok 'Failed to create initial motion configuration'
-fi
-
 # Migration
 if bashio::fs.file_exists "${CONF}"; then
     bashio::log.debug "Running startup migrations"
