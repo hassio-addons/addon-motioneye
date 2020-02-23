@@ -144,7 +144,8 @@ Type of action button. Acceptable types are:
 
 #### Sub-option: `action_buttons. camera`
 
-The camera identification number. Corresponds to the camera number as set up within the motionEye UI.
+The camera identification number. Corresponds to the camera number as set up
+within the motionEye UI.
 
 #### Sub-option: `action_buttons.command`
 
