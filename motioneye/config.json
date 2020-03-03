@@ -22,6 +22,7 @@
   "hassio_role": "default",
   "host_network": true,
   "apparmor": false,
+  "video": true,
   "privileged": ["DAC_READ_SEARCH", "SYS_ADMIN"],
   "map": ["share:rw", "ssl"],
   "options": {
