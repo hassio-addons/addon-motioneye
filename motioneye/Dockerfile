@@ -12,7 +12,7 @@ COPY requirements.txt /tmp/
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         curl-dev=7.67.0-r0 \
-        gcc=9.2.0-r3 \
+        gcc=9.2.0-r4 \
         jpeg-dev=8-r6 \
         musl-dev=1.1.24-r0 \
         py2-pip=18.1-r0 \
