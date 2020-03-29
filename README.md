@@ -151,13 +151,6 @@ within the motionEye UI.
 
 The bash shell command to be executed when the button is pressed.
 
-## Known issues and limitations
-
-- Local USB or Pi cameras are currently not supported yet. This is
-  caused by a limitation of Hass.io. A request for a change has been made
-  to make this possible in the future. motionEye(OS) allows you to use a second
-  instance (e.g., a Pi Zero W) for those kinds of purposes.
-
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
