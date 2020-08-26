@@ -22,7 +22,7 @@ RUN \
         cifs-utils=6.10-r1 \
         ffmpeg=4.3.1-r0 \
         libcurl=7.69.1-r0 \
-        libjpeg=8-r6 \
+        libjpeg=9d-r0 \
         mosquitto-clients=1.6.8-r0 \
         motion@edge=4.3.1-r0 \
         nginx=1.16.1-r6 \
