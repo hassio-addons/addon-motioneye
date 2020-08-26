@@ -19,7 +19,7 @@ RUN \
         python-dev=2.7.18-r0 \
     \
     && apk add --no-cache \
-        cifs-utils=6.9-r1 \
+        cifs-utils=6.10-r1 \
         ffmpeg=4.2.1-r3 \
         libcurl=7.69.1-r0 \
         libjpeg=8-r6 \
