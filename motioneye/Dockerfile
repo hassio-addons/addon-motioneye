@@ -13,7 +13,7 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         curl-dev=7.69.1-r0 \
         gcc=9.3.0-r2 \
-        jpeg-dev=8-r6 \
+        jpeg-dev=9d-r0 \
         musl-dev=1.1.24-r2 \
         py2-pip=18.1-r0 \
         python-dev=2.7.18-r0 \
