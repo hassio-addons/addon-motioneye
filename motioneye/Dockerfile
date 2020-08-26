@@ -20,7 +20,7 @@ RUN \
     \
     && apk add --no-cache \
         cifs-utils=6.10-r1 \
-        ffmpeg=4.2.1-r3 \
+        ffmpeg=4.3.1-r0 \
         libcurl=7.69.1-r0 \
         libjpeg=8-r6 \
         mosquitto-clients=1.6.8-r0 \
