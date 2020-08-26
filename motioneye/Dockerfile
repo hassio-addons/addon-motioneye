@@ -15,8 +15,7 @@ RUN \
         gcc=9.3.0-r2 \
         jpeg-dev=9d-r0 \
         musl-dev=1.1.24-r9 \
-        py2-pip=18.1-r0 \
-        python-dev=2.7.18-r0 \
+        python2-dev=2.7.18-r0 \
     \
     && apk add --no-cache \
         cifs-utils=6.10-r1 \
@@ -26,8 +25,9 @@ RUN \
         mosquitto-clients=1.6.9-r0 \
         motion@edge=4.3.1-r0 \
         nginx=1.18.0-r0 \
-        py-setuptools=42.0.2-r0 \
         python2=2.7.18-r0 \
+    \
+    && python -m ensurepip \
     \
     && pip install --no-cache-dir -r /tmp/requirements.txt \
     \
