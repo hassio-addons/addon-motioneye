@@ -27,6 +27,7 @@
   "privileged": ["DAC_READ_SEARCH", "SYS_ADMIN"],
   "full_access": true,
   "map": ["share:rw", "ssl"],
+  "devices": ["/dev/sda1:/dev/sda1:rwm"]
   "options": {
     "motion_webcontrol": false,
     "ssl": true,

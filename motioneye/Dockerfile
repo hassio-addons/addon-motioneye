@@ -37,6 +37,8 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
+RUN mkdir /data1
+
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE

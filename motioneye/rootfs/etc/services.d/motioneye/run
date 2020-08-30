@@ -15,5 +15,8 @@ if bashio::debug; then
     options+=(-d)
 fi
 
+# haaaaack
+mount -t ext4 -o defaults,noauto,noatime,nodiratime /dev/sda1 /data1
+
 # Run the motionEye
 exec meyectl startserver "${options[@]}"
