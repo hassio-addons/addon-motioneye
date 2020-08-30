@@ -2,8 +2,8 @@
   "name": "motionEye",
   "version": "dev",
   "slug": "motioneye",
-  "description": "Simple, elegant and feature-rich CCTV/NVR for your cameras",
-  "url": "https://github.com/hassio-addons/addon-motioneye",
+  "description": "hacked motioneye container for USB storage",
+  "url": "https://github.com/elJosho/addon-motioneye",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8765]",
   "startup": "application",
   "ingress": true,
@@ -27,7 +27,7 @@
   "privileged": ["DAC_READ_SEARCH", "SYS_ADMIN"],
   "full_access": true,
   "map": ["share:rw", "ssl"],
-  "devices": ["/dev/sda1:/dev/sda1:rwm"]
+  "devices": ["/dev/sda1:/dev/sda1:rwm"],
   "options": {
     "motion_webcontrol": false,
     "ssl": true,
