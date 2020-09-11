@@ -11,9 +11,18 @@ COPY requirements.txt /tmp/
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
+    	autoconf=2.69-r2 \
+        automake=1.16.2-r0 \
+        build-base=0.5-r2 \
         curl-dev=7.69.1-r1 \
+        ffmpeg-dev=4.3.1-r0 \
         gcc=9.3.0-r2 \
+        gettext-dev=0.20.2-r0 \
+        git=2.26.2-r0 \
         jpeg-dev=9d-r0 \
+        libjpeg-turbo-dev=2.0.5-r0 \
+        libmicrohttpd-dev=0.9.70-r0 \
+        libwebp-dev=1.1.0-r0 \
         musl-dev=1.1.24-r9 \
         python2-dev=2.7.18-r0 \
     \
