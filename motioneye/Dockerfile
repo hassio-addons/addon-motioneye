@@ -9,6 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 COPY requirements.txt /tmp/
 
 # Setup base
+# hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
     	autoconf=2.69-r2 \
