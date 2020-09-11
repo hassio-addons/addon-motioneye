@@ -41,6 +41,24 @@ RUN \
         python2=2.7.18-r0 \
         v4l-utils=1.20.0-r0 \
     \
+    # Build Motion
+    && MOTION_VERSION=4.3.1 \
+    && curl -J -L -o /tmp/motion.tar.gz \
+        https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz \
+    && mkdir -p /tmp/motion \
+    && tar zxf /tmp/motion.tar.gz -C \
+        /tmp/motion --strip-components=1 \
+    && cd /tmp/motion \
+    && autoreconf -fiv \
+	&& ./configure \
+            --without-pgsql \
+            --without-mysql \
+            --without-sqlite3 \
+            --prefix=/usr \
+            --sysconfdir=/etc \
+            --without-optimizecpu \
+    && make install \
+    \
     && python -m ensurepip \
     \
     && pip install --no-cache-dir -r /tmp/requirements.txt \
