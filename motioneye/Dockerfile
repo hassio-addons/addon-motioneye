@@ -29,12 +29,17 @@ RUN \
     && apk add --no-cache \
         cifs-utils=6.10-r1 \
         ffmpeg=4.3.1-r0 \
+        ffmpeg-libs=4.3.1-r0 \
         libcurl=7.69.1-r1 \
         libjpeg=9d-r0 \
+        libjpeg-turbo=2.0.5-r0 \
+        libintl=0.20.2-r0 \
+        libmicrohttpd=0.9.70-r0 \
+        libwebp=1.1.0-r0 \
         mosquitto-clients=1.6.9-r0 \
-        motion@edge=4.3.1-r0 \
         nginx=1.18.0-r0 \
         python2=2.7.18-r0 \
+        v4l-utils=1.20.0-r0 \
     \
     && python -m ensurepip \
     \
