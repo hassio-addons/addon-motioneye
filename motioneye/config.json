@@ -25,7 +25,7 @@
   "apparmor": false,
   "video": true,
   "privileged": ["DAC_READ_SEARCH", "SYS_ADMIN"],
-  "map": ["share:rw", "ssl"],
+  "map": ["media:rw", "share:rw", "ssl"],
   "options": {
     "motion_webcontrol": false,
     "ssl": true,
