@@ -12,7 +12,7 @@ COPY requirements.txt /tmp/
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-    	autoconf=2.69-r2 \
+        autoconf=2.69-r2 \
         automake=1.16.2-r0 \
         build-base=0.5-r2 \
         curl-dev=7.69.1-r1 \
@@ -42,7 +42,6 @@ RUN \
         python2=2.7.18-r0 \
         v4l-utils=1.20.0-r0 \
     \
-    # Build Motion
     && MOTION_VERSION=4.3.1 \
     && curl -J -L -o /tmp/motion.tar.gz \
         https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz \
@@ -51,7 +50,7 @@ RUN \
         /tmp/motion --strip-components=1 \
     && cd /tmp/motion \
     && autoreconf -fiv \
-	&& ./configure \
+    && ./configure \
             --without-pgsql \
             --without-mysql \
             --without-sqlite3 \
