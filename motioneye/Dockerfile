@@ -24,8 +24,10 @@ RUN \
         libjpeg-turbo-dev=2.0.5-r0 \
         libmicrohttpd-dev=0.9.70-r0 \
         libwebp-dev=1.1.0-r0 \
+        linux-headers=5.4.5-r1 \
         musl-dev=1.1.24-r9 \
         python2-dev=2.7.18-r0 \
+        v4l-utils-dev=1.20.0-r0 \
     \
     && apk add --no-cache \
         cifs-utils=6.10-r1 \
