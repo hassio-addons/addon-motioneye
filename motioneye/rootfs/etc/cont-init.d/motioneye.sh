@@ -45,8 +45,10 @@ if ! bashio::fs.directory_exists '/share/motioneye'; then
 fi
 
 # Remove any existing action buttons before recreating
-for old_action in lock unlock light alarm up right down left zoom preset; do
-    find /data/motioneye/. -name "${old_action}*" -delete
+for old_action in lock unlock light_on light_off alarm_on alarm_off up right \
+    down left zoom_in zoom_out preset1 preset2 preset3 preset4 preset5 preset6 \
+    preset7 preset8 preset9; do
+    find /data/motioneye/. -name "${old_action}_*" -delete
 done
 
 # Creates action button scripts if any are configured
