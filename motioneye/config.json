@@ -5,7 +5,6 @@
   "description": "Simple, elegant and feature-rich CCTV/NVR for your cameras",
   "url": "https://github.com/hassio-addons/addon-motioneye",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8765]",
-  "startup": "application",
   "ingress": true,
   "ingress_port": 0,
   "panel_icon": "mdi:cctv",
@@ -18,9 +17,7 @@
   "ports_description": {
     "80/tcp": "Web interface (Not required for Ingress)"
   },
-  "boot": "auto",
   "hassio_api": true,
-  "hassio_role": "default",
   "host_network": true,
   "apparmor": false,
   "video": true,
