@@ -44,7 +44,7 @@ RUN \
         python2=2.7.18-r1 \
         v4l-utils=1.20.0-r0 \
     \
-    && MOTION_VERSION=4.3.1 \
+    && MOTION_VERSION=4.3.2 \
     && curl -J -L -o /tmp/motion.tar.gz \
         https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz \
     && mkdir -p /tmp/motion \
