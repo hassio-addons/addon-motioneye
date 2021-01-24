@@ -17,7 +17,6 @@
   "ports_description": {
     "80/tcp": "Web interface (Not required for Ingress)"
   },
-  "hassio_api": true,
   "host_network": true,
   "apparmor": false,
   "video": true,
