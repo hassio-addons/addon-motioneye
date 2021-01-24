@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,36 +12,36 @@ COPY requirements.txt /tmp/
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        autoconf=2.69-r2 \
-        automake=1.16.2-r0 \
+        autoconf=2.69-r3 \
+        automake=1.16.3-r0 \
         build-base=0.5-r2 \
-        curl-dev=7.69.1-r1 \
-        ffmpeg-dev=4.3.1-r0 \
-        gcc=9.3.0-r2 \
-        gettext-dev=0.20.2-r0 \
-        git=2.26.2-r0 \
-        jpeg-dev=9d-r0 \
-        libjpeg-turbo-dev=2.0.5-r0 \
-        libmicrohttpd-dev=0.9.70-r0 \
+        curl-dev=7.74.0-r0 \
+        ffmpeg-dev=4.3.1-r3 \
+        gcc=10.2.1_pre1-r3 \
+        gettext-dev=0.20.2-r2 \
+        git=2.30.0-r0 \
+        jpeg-dev=9d-r1 \
+        libjpeg-turbo-dev=2.0.6-r0 \
+        libmicrohttpd-dev=0.9.72-r0 \
         libwebp-dev=1.1.0-r0 \
-        linux-headers=5.4.5-r1 \
-        musl-dev=1.1.24-r9 \
-        python2-dev=2.7.18-r0 \
+        linux-headers=5.7.8-r0 \
+        musl-dev=1.2.2-r0 \
+        python2-dev=2.7.18-r1 \
         v4l-utils-dev=1.20.0-r0 \
     \
     && apk add --no-cache \
-        cifs-utils=6.10-r1 \
-        ffmpeg=4.3.1-r0 \
-        ffmpeg-libs=4.3.1-r0 \
-        libcurl=7.69.1-r1 \
-        libjpeg=9d-r0 \
-        libjpeg-turbo=2.0.5-r0 \
-        libintl=0.20.2-r0 \
-        libmicrohttpd=0.9.70-r0 \
+        cifs-utils=6.12-r0 \
+        ffmpeg=4.3.1-r3 \
+        ffmpeg-libs=4.3.1-r3 \
+        libcurl=7.74.0-r0 \
+        libjpeg=9d-r1 \
+        libjpeg-turbo=2.0.6-r0 \
+        libintl=0.20.2-r2 \
+        libmicrohttpd=0.9.72-r0 \
         libwebp=1.1.0-r0 \
-        mosquitto-clients=1.6.9-r0 \
-        nginx=1.18.0-r0 \
-        python2=2.7.18-r0 \
+        mosquitto-clients=1.6.12-r2 \
+        nginx=1.18.0-r13 \
+        python2=2.7.18-r1 \
         v4l-utils=1.20.0-r0 \
     \
     && MOTION_VERSION=4.3.1 \
