@@ -19,7 +19,7 @@ RUN \
         ffmpeg-dev=4.3.1-r3 \
         gcc=10.2.1_pre1-r3 \
         gettext-dev=0.20.2-r2 \
-        git=2.30.0-r0 \
+        git=2.30.1-r0 \
         jpeg-dev=9d-r1 \
         libjpeg-turbo-dev=2.0.6-r0 \
         libmicrohttpd-dev=0.9.72-r0 \
