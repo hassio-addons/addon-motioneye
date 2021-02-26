@@ -5,6 +5,6 @@ MarkupSafe==1.1.1
 motioneye==0.42.1
 pillow==6.2.2
 pycurl==7.43.0.5
-singledispatch==3.6.0
+singledispatch==3.6.1
 six==1.15.0
 tornado==5.1.1
