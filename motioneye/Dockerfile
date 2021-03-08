@@ -15,7 +15,7 @@ RUN \
         autoconf=2.69-r3 \
         automake=1.16.3-r0 \
         build-base=0.5-r2 \
-        curl-dev=7.74.0-r0 \
+        curl-dev=7.74.0-r1 \
         ffmpeg-dev=4.3.1-r3 \
         gcc=10.2.1_pre1-r3 \
         gettext-dev=0.20.2-r2 \
@@ -33,7 +33,7 @@ RUN \
         cifs-utils=6.12-r0 \
         ffmpeg=4.3.1-r3 \
         ffmpeg-libs=4.3.1-r3 \
-        libcurl=7.74.0-r0 \
+        libcurl=7.74.0-r1 \
         libjpeg=9d-r1 \
         libjpeg-turbo=2.0.6-r0 \
         libintl=0.20.2-r2 \
