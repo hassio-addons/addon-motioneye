@@ -25,7 +25,8 @@
     "motion_webcontrol": false,
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
+    "keyfile": "privkey.pem",
+    "action_buttons": []
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
