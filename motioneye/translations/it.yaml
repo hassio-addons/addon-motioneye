@@ -1,0 +1,31 @@
+---
+configuration:
+  log_level:
+    name: Livello di log
+    description: >-
+      Controllo livello di log del add-on
+  motion_webcontrol:
+    name: Motion webcontrol
+    description: >-
+      Abilita il rilevatore di movimento webcontrol endpoint running on port 7999.
+  ssl:
+    name: SSL
+    description: >-
+      abilita/disabilita SSL (HTTPS) web di motionEye.
+  certfile:
+    name: Certificate file
+    description: >-
+      il certificato SSL da utilizzare. Nota che il file 
+      deve stare nella cartella /ssl/
+  keyfile:
+    name: File Chiave privata
+    description: >-
+      La chiave privata SSL. Nota che il file 
+      deve stare nella cartella /ssl/
+  action_buttons:
+    name: Pulsante Azioni
+    description: >-
+      Se configurato uno script dovrà essere creato su motioneye.
+      guarda la documentazione a riguardo
+network:
+  80/tcp: Interfaccia Web (Non richiesta se usi menu hassio laterale)
