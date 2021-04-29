@@ -21,7 +21,7 @@ RUN \
         gettext-dev=0.20.2-r2 \
         git=2.30.2-r0 \
         jpeg-dev=9d-r1 \
-        libjpeg-turbo-dev=2.0.6-r0 \
+        libjpeg-turbo-dev=2.1.0-r0 \
         libmicrohttpd-dev=0.9.72-r0 \
         libwebp-dev=1.1.0-r0 \
         linux-headers=5.7.8-r0 \
@@ -35,7 +35,7 @@ RUN \
         ffmpeg-libs=4.3.1-r3 \
         libcurl=7.76.1-r0 \
         libjpeg=9d-r1 \
-        libjpeg-turbo=2.0.6-r0 \
+        libjpeg-turbo=2.1.0-r0 \
         libintl=0.20.2-r2 \
         libmicrohttpd=0.9.72-r0 \
         libwebp=1.1.0-r0 \
