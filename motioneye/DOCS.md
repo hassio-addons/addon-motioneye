@@ -124,6 +124,16 @@ within the motionEye UI.
 
 The bash shell command to be executed when the button is pressed.
 
+## motionEye Integration
+
+This add-on can optionally be used in conjuction with the Home Assistant
+[motionEye integration](https://www.home-assistant.io/integrations/motioneye/)
+to offer motionEye entities natively within Home Assistant.
+
+To configure the integration to use the add-on, simply use
+`http://localhost:28765` as the URL field in the integration configuration,
+along with your admin and surveillance username and password.
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]

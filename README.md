@@ -44,6 +44,9 @@ Some cool features of motionEye:
 - Can record continuously, motion, or timelapse, with retention settings.
 - Supports "[action buttons][motioneye-wiki-action-buttons]" within the configuration.
 
+The add-on can optionally be used in conjunction with the [Home Assistant
+motionEye integration](https://www.home-assistant.io/integrations/motioneye/).
+
 [:books: Read the full add-on documentation][docs]
 
 ## Support
