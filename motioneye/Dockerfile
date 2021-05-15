@@ -31,17 +31,18 @@ RUN \
     \
     && apk add --no-cache \
         cifs-utils=6.12-r0 \
-        ffmpeg=4.3.1-r3 \
         ffmpeg-libs=4.3.1-r3 \
+        ffmpeg=4.3.1-r3 \
         libcurl=7.76.1-r0 \
-        libjpeg=9d-r1 \
-        libjpeg-turbo=2.1.0-r0 \
         libintl=0.20.2-r2 \
+        libjpeg-turbo=2.1.0-r0 \
+        libjpeg=9d-r1 \
         libmicrohttpd=0.9.72-r0 \
         libwebp=1.1.0-r0 \
         mosquitto-clients=1.6.12-r2 \
         nginx=1.18.0-r13 \
         python2=2.7.18-r1 \
+        rsync=3.2.3-r1 \
         v4l-utils=1.20.0-r0 \
     \
     && MOTION_VERSION=4.3.2 \
