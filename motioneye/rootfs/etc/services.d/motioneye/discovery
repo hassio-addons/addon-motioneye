@@ -14,7 +14,7 @@ config=$(bashio::var.json \
 )
 
 # Send discovery info
-if bashio::discovery "mmotioneye" "${config}" > /dev/null; then
+if bashio::discovery "motioneye" "${config}" > /dev/null; then
     bashio::log.info "Successfully send discovery information to Home Assistant."
 else
     bashio::log.error "Discovery message to Home Assistant failed!"
