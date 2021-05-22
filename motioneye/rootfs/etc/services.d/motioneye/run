@@ -15,5 +15,8 @@ if bashio::debug; then
     options+=(-d)
 fi
 
+# Send out discovery information
+./discovery &
+
 # Run the motionEye
 exec meyectl startserver "${options[@]}"
