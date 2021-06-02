@@ -30,7 +30,7 @@ RUN \
         v4l-utils-dev=1.20.0-r0 \
     \
     && apk add --no-cache \
-        cifs-utils=6.12-r0 \
+        cifs-utils=6.13-r0 \
         ffmpeg-libs=4.3.1-r4 \
         ffmpeg=4.3.1-r4 \
         libcurl=7.77.0-r0 \
