@@ -16,7 +16,7 @@ RUN \
         automake=1.16.3-r0 \
         build-base=0.5-r2 \
         curl-dev=7.77.0-r0 \
-        ffmpeg-dev=4.3.1-r3 \
+        ffmpeg-dev=4.3.1-r4 \
         gcc=10.2.1_pre1-r3 \
         gettext-dev=0.20.2-r2 \
         git=2.30.2-r0 \
@@ -31,8 +31,8 @@ RUN \
     \
     && apk add --no-cache \
         cifs-utils=6.12-r0 \
-        ffmpeg-libs=4.3.1-r3 \
-        ffmpeg=4.3.1-r3 \
+        ffmpeg-libs=4.3.1-r4 \
+        ffmpeg=4.3.1-r4 \
         libcurl=7.77.0-r0 \
         libintl=0.20.2-r2 \
         libjpeg-turbo=2.1.0-r0 \
