@@ -40,7 +40,7 @@ RUN \
         libmicrohttpd=0.9.72-r0 \
         libwebp=1.1.0-r0 \
         mosquitto-clients=1.6.12-r2 \
-        nginx=1.18.0-r14 \
+        nginx=1.18.0-r15 \
         python2=2.7.18-r1 \
         rsync=3.2.3-r1 \
         v4l-utils=1.20.0-r0 \
