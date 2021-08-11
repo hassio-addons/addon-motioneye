@@ -33,7 +33,7 @@ RUN \
         cifs-utils=6.13-r0 \
         ffmpeg-libs=4.4-r1 \
         ffmpeg=4.4-r1 \
-        libcurl=7.77.0-r1 \
+        libcurl=7.78.0-r0 \
         libintl=0.21-r0 \
         libjpeg-turbo=2.1.0-r0 \
         libjpeg=9d-r1 \
