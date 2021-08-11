@@ -42,7 +42,7 @@ RUN \
         mosquitto-clients=2.0.11-r0 \
         nginx=1.20.1-r3 \
         python2=2.7.18-r2 \
-        rsync=3.2.3-r2 \
+        rsync=3.2.3-r4 \
         v4l-utils=1.20.0-r0 \
     \
     && MOTION_VERSION=4.3.2 \
