@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.0.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -15,7 +15,7 @@ RUN \
         autoconf=2.71-r0 \
         automake=1.16.3-r0 \
         build-base=0.5-r2 \
-        curl-dev=7.78.0-r0 \
+        curl-dev=7.79.1-r0 \
         ffmpeg-dev=4.4-r1 \
         gcc=10.3.1_git20210424-r2 \
         gettext-dev=0.21-r0 \
@@ -33,7 +33,7 @@ RUN \
         cifs-utils=6.13-r0 \
         ffmpeg-libs=4.4-r1 \
         ffmpeg=4.4-r1 \
-        libcurl=7.78.0-r0 \
+        libcurl=7.79.1-r0 \
         libintl=0.21-r0 \
         libjpeg-turbo=2.1.0-r0 \
         libjpeg=9d-r1 \
