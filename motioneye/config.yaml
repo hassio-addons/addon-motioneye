@@ -4,6 +4,7 @@ version: dev
 slug: motioneye
 description: Simple, elegant and feature-rich CCTV/NVR for your cameras
 url: https://github.com/hassio-addons/addon-motioneye
+codenotary: codenotary@frenck.dev
 ingress: true
 ingress_port: 0
 ingress_stream: true
