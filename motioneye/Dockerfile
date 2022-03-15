@@ -23,7 +23,7 @@ RUN \
         jpeg-dev=9d-r1 \
         libjpeg-turbo-dev=2.1.2-r0 \
         libmicrohttpd-dev=0.9.73-r0 \
-        libwebp-dev=1.2.1-r0 \
+        libwebp-dev=1.2.2-r0 \
         linux-headers=5.10.41-r0 \
         musl-dev=1.2.2-r7 \
         python2-dev=2.7.18-r4 \
@@ -38,7 +38,7 @@ RUN \
         libjpeg-turbo=2.1.2-r0 \
         libjpeg=9d-r1 \
         libmicrohttpd=0.9.73-r0 \
-        libwebp=1.2.1-r0 \
+        libwebp=1.2.2-r0 \
         mosquitto-clients=2.0.14-r0 \
         nginx=1.20.2-r0 \
         python2=2.7.18-r4 \
