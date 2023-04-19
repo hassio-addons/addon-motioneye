@@ -31,7 +31,8 @@
         "ARG MOTION_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "Motion-Project/motion"
+      "depNameTemplate": "Motion-Project/motion",
+      "extractVersion": "^release-(?<version>.*)$"
     }
   ],
   "packageRules": [
