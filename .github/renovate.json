@@ -32,7 +32,7 @@
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "Motion-Project/motion",
-      "extractVersion": "^release-(?<version>.*)$"
+      "extractVersionTemplate": "^release-(?<version>.*)$"
     }
   ],
   "packageRules": [
