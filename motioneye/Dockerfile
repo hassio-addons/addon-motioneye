@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:11.1.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:13.2.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,40 +12,37 @@ COPY requirements.txt /tmp/
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        autoconf=2.71-r0 \
-        automake=1.16.4-r1 \
-        build-base=0.5-r2 \
-        curl-dev=7.80.0-r0 \
-        ffmpeg-dev=4.4.1-r2 \
-        gcc=10.3.1_git20211027-r0 \
-        gettext-dev=0.21-r0 \
-        git=2.34.1-r0 \
-        jpeg-dev=9d-r1 \
-        libjpeg-turbo-dev=2.1.2-r0 \
-        libmicrohttpd-dev=0.9.73-r0 \
-        libwebp-dev=1.2.2-r0 \
-        linux-headers=5.10.41-r0 \
-        musl-dev=1.2.2-r7 \
-        python2-dev=2.7.18-r4 \
-        v4l-utils-dev=1.22.1-r1 \
+        autoconf=2.71-r1 \
+        automake=1.16.5-r1 \
+        build-base=0.5-r3 \
+        curl-dev=8.0.1-r0 \
+        ffmpeg-dev=5.1.3-r0 \
+        gettext-dev=0.21.1-r1 \
+        git=2.38.4-r1 \
+        jpeg-dev=9e-r0 \
+        libjpeg-turbo-dev=2.1.4-r0 \
+        libmicrohttpd-dev=0.9.75-r0 \
+        libwebp-dev=1.2.4-r1 \
+        musl-dev=1.2.3-r4 \
+        python3-dev=3.10.11-r0 \
+        v4l-utils-dev=1.22.1-r2 \
     \
     && apk add --no-cache \
-        cifs-utils=6.14-r0 \
-        ffmpeg-libs=4.4.1-r2 \
-        ffmpeg=4.4.1-r2 \
-        libcurl=7.80.0-r0 \
-        libintl=0.21-r0 \
-        libjpeg-turbo=2.1.2-r0 \
-        libjpeg=9d-r1 \
-        libmicrohttpd=0.9.73-r0 \
-        libwebp=1.2.2-r0 \
-        mosquitto-clients=2.0.14-r0 \
-        nginx=1.20.2-r0 \
-        python2=2.7.18-r4 \
-        rsync=3.2.3-r5 \
-        v4l-utils=1.22.1-r1 \
+        cifs-utils=7.0-r0 \
+        ffmpeg-libs=5.1.3-r0 \
+        ffmpeg=5.1.3-r0 \
+        libintl=0.21.1-r1 \
+        libjpeg-turbo=2.1.4-r0 \
+        libjpeg=9e-r0 \
+        libmicrohttpd=0.9.75-r0 \
+        libwebp=1.2.4-r1 \
+        mosquitto-clients=2.0.15-r1 \
+        nginx=1.22.1-r0 \
+        py3-pip=22.3.1-r1 \
+        python3=3.10.11-r0 \
+        rsync=3.2.7-r0 \
+        v4l-utils=1.22.1-r2 \
     \
-    && MOTION_VERSION=4.3.2 \
     && curl -J -L -o /tmp/motion.tar.gz \
         https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz \
     && mkdir -p /tmp/motion \
