@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG MOTION_VERSION="4.4.0"
+ARG MOTION_VERSION="4.5.1"
 ARG MOTIONEYE_VERSION="ef1c42b57895324a2fb7129e63d37412061a82e2"
 # hadolint ignore=DL3003
 RUN \
