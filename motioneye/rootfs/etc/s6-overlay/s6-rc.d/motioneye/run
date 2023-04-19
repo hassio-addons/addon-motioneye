@@ -1,10 +1,10 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
+# shellcheck shell=bash
 # ==============================================================================
 # Home Assistant Community Add-on: motionEye
 # Runs the motionEye
 # ==============================================================================
 declare -a options
-
 
 bashio::log.info "Starting motionEye..."
 
@@ -14,9 +14,6 @@ options+=(-c /data/motioneye/motioneye.conf)
 if bashio::debug; then
     options+=(-d)
 fi
-
-# Send out discovery information
-./discovery &
 
 # Run the motionEye
 exec meyectl startserver "${options[@]}"
