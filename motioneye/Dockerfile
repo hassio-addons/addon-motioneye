@@ -5,10 +5,9 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# Copy Python requirements file
-COPY requirements.txt /tmp/
-
 # Setup base
+ARG MOTION_VERSION="4.4.0"
+ARG MOTIONEYE_VERSION="ef1c42b57895324a2fb7129e63d37412061a82e2"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
@@ -44,7 +43,7 @@ RUN \
         v4l-utils=1.22.1-r2 \
     \
     && curl -J -L -o /tmp/motion.tar.gz \
-        https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz \
+        "https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz" \
     && mkdir -p /tmp/motion \
     && tar zxf /tmp/motion.tar.gz -C \
         /tmp/motion --strip-components=1 \
@@ -56,12 +55,10 @@ RUN \
             --without-sqlite3 \
             --prefix=/usr \
             --sysconfdir=/etc \
-            --without-optimizecpu \
     && make install \
     \
-    && python -m ensurepip \
-    \
-    && pip install --no-cache-dir -r /tmp/requirements.txt \
+    && pip install --no-cache-dir \
+        "https://github.com/motioneye-project/motioneye/archive/${MOTIONEYE_VERSION}.tar.gz" \
     \
     && apk del --no-cache --purge .build-dependencies \
     && rm -f -r /tmp/*
