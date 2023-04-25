@@ -17,7 +17,7 @@ RUN \
         curl-dev=8.0.1-r0 \
         ffmpeg-dev=5.1.3-r0 \
         gettext-dev=0.21.1-r1 \
-        git=2.38.4-r1 \
+        git=2.38.5-r0 \
         jpeg-dev=9e-r0 \
         libjpeg-turbo-dev=2.1.4-r0 \
         libmicrohttpd-dev=0.9.75-r0 \
