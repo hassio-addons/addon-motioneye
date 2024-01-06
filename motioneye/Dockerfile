@@ -21,7 +21,7 @@ RUN \
         jpeg-dev=9e-r0 \
         libjpeg-turbo-dev=2.1.4-r0 \
         libmicrohttpd-dev=0.9.75-r0 \
-        libwebp-dev=1.2.4-r2 \
+        libwebp-dev=1.2.4-r3 \
         linux-headers=5.19.5-r0 \
         musl-dev=1.2.3-r5 \
         python3-dev=3.10.12-r0 \
