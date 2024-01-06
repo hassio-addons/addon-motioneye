@@ -14,7 +14,7 @@ RUN \
         autoconf=2.71-r1 \
         automake=1.16.5-r1 \
         build-base=0.5-r3 \
-        curl-dev=8.1.2-r0 \
+        curl-dev=8.5.0-r0 \
         ffmpeg-dev=5.1.3-r0 \
         gettext-dev=0.21.1-r1 \
         git=2.38.5-r0 \
