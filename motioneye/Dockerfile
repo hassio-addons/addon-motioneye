@@ -6,42 +6,42 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG MOTION_VERSION="4.5.1"
+ARG MOTION_VERSION="4.6.0"
 ARG MOTIONEYE_VERSION="ef1c42b57895324a2fb7129e63d37412061a82e2"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        autoconf=2.71-r1 \
-        automake=1.16.5-r1 \
+        autoconf=2.71-r2 \
+        automake=1.16.5-r2 \
         build-base=0.5-r3 \
-        curl-dev=8.1.2-r0 \
-        ffmpeg-dev=5.1.3-r0 \
-        gettext-dev=0.21.1-r1 \
-        git=2.38.5-r0 \
-        jpeg-dev=9e-r0 \
-        libjpeg-turbo-dev=2.1.4-r0 \
-        libmicrohttpd-dev=0.9.75-r0 \
-        libwebp-dev=1.2.4-r2 \
-        linux-headers=5.19.5-r0 \
-        musl-dev=1.2.3-r5 \
-        python3-dev=3.10.12-r0 \
-        v4l-utils-dev=1.22.1-r2 \
+        curl-dev=8.5.0-r0 \
+        ffmpeg-dev=6.1-r1 \
+        gettext-dev=0.22.3-r0 \
+        git=2.43.0-r0 \
+        jpeg-dev=9e-r1 \
+        libjpeg-turbo-dev=3.0.1-r0 \
+        libmicrohttpd-dev=0.9.77-r0 \
+        libwebp-dev=1.3.2-r0 \
+        linux-headers=6.5-r0 \
+        musl-dev=1.2.4_git20230717-r4 \
+        python3-dev=3.11.6-r1 \
+        v4l-utils-dev=1.24.1-r1 \
     \
     && apk add --no-cache \
-        cifs-utils=7.0-r0 \
-        ffmpeg-libs=5.1.3-r0 \
-        ffmpeg=5.1.3-r0 \
-        libintl=0.21.1-r1 \
-        libjpeg-turbo=2.1.4-r0 \
-        libjpeg=9e-r0 \
-        libmicrohttpd=0.9.75-r0 \
-        libwebp=1.2.4-r2 \
-        mosquitto-clients=2.0.15-r1 \
-        nginx=1.22.1-r0 \
-        py3-pip=22.3.1-r1 \
-        python3=3.10.12-r0 \
-        rsync=3.2.7-r0 \
-        v4l-utils=1.22.1-r2 \
+        cifs-utils=7.0-r2 \
+        ffmpeg-libs=6.1-r1 \
+        ffmpeg=6.1-r1 \
+        libintl=0.22.3-r0 \
+        libjpeg-turbo=3.0.1-r0 \
+        libjpeg=9e-r1 \
+        libmicrohttpd=0.9.77-r0 \
+        libwebp=1.3.2-r0 \
+        mosquitto-clients=2.0.18-r0 \
+        nginx=1.24.0-r14 \
+        py3-pip=23.3.1-r0 \
+        python3=3.11.6-r1 \
+        rsync=3.2.7-r4 \
+        v4l-utils=1.24.1-r1 \
     \
     && curl -J -L -o /tmp/motion.tar.gz \
         "https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz" \
