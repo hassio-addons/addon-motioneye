@@ -35,7 +35,7 @@ RUN \
         libjpeg-turbo=2.1.4-r0 \
         libjpeg=9e-r0 \
         libmicrohttpd=0.9.75-r0 \
-        libwebp=1.2.4-r2 \
+        libwebp=1.2.4-r3 \
         mosquitto-clients=2.0.15-r1 \
         nginx=1.22.1-r0 \
         py3-pip=22.3.1-r1 \
