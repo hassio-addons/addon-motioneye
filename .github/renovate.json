@@ -33,6 +33,15 @@
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "Motion-Project/motion",
       "extractVersionTemplate": "^release-(?<version>.*)$"
+    },
+    {
+      "fileMatch": ["/Dockerfile$"],
+      "matchStrings": [
+        "ARG MOTIONEYE_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "motioneye-project/motioneye",
+      "versioningTemplate": "loose"
     }
   ],
   "packageRules": [
