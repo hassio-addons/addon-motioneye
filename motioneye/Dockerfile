@@ -39,7 +39,7 @@ RUN \
         mosquitto-clients=2.0.15-r1 \
         nginx=1.22.1-r0 \
         py3-pip=22.3.1-r1 \
-        python3=3.10.12-r0 \
+        python3=3.10.13-r0 \
         rsync=3.2.7-r0 \
         v4l-utils=1.22.1-r2 \
     \
