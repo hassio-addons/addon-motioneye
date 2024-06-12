@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 ARG MOTION_VERSION="4.6.0"
-ARG MOTIONEYE_VERSION="0.43.1b1"
+ARG MOTIONEYE_VERSION="0.43.1b2"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
