@@ -12,36 +12,36 @@ ARG MOTIONEYE_VERSION="0.43.1b2"
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         autoconf=2.72-r0 \
-        automake=1.16.5-r2 \
+        automake=1.17-r0 \
         build-base=0.5-r3 \
-        curl-dev=8.10.1-r0 \
-        ffmpeg-dev=6.1.1-r8 \
+        curl-dev=8.11.0-r2 \
+        ffmpeg-dev=6.1.2-r0 \
         gettext-dev=0.22.5-r0 \
-        git=2.45.2-r0 \
-        jpeg-dev=9e-r1 \
-        libjpeg-turbo-dev=3.0.3-r0 \
+        git=2.47.1-r0 \
+        jpeg-dev=9f-r0 \
+        libjpeg-turbo-dev=3.0.4-r0 \
         libmicrohttpd-dev=0.9.77-r0 \
-        libwebp-dev=1.3.2-r0 \
-        linux-headers=6.6-r0 \
-        musl-dev=1.2.5-r0 \
-        python3-dev=3.12.6-r0 \
-        v4l-utils-dev=1.24.1-r1 \
+        libwebp-dev=1.4.0-r0 \
+        linux-headers=6.6-r1 \
+        musl-dev=1.2.5-r8 \
+        python3-dev=3.12.8-r1 \
+        v4l-utils-dev=1.28.1-r1 \
     \
     && apk add --no-cache \
-        cifs-utils=7.0-r4 \
-        ffmpeg-libs=6.1.1-r8 \
-        ffmpeg=6.1.1-r8 \
+        cifs-utils=7.1-r0 \
+        ffmpeg-libs=6.1.2-r0 \
+        ffmpeg=6.1.2-r0 \
         libintl=0.22.5-r0 \
-        libjpeg-turbo=3.0.3-r0 \
-        libjpeg=9e-r1 \
+        libjpeg-turbo=3.0.4-r0 \
+        libjpeg=9f-r0 \
         libmicrohttpd=0.9.77-r0 \
-        libwebp=1.3.2-r0 \
-        mosquitto-clients=2.0.18-r0 \
-        nginx=1.26.2-r0 \
-        py3-pip=24.0-r2 \
-        python3=3.12.6-r0 \
+        libwebp=1.4.0-r0 \
+        mosquitto-clients=2.0.20-r0 \
+        nginx=1.26.2-r3 \
+        py3-pip=24.3.1-r0 \
+        python3=3.12.8-r1 \
         rsync=3.3.0-r0 \
-        v4l-utils=1.24.1-r1 \
+        v4l-utils=1.28.1-r1 \
     \
     && curl -J -L -o /tmp/motion.tar.gz \
         "https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz" \
