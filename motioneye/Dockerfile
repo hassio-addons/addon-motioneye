@@ -40,7 +40,7 @@ RUN \
         nginx=1.26.2-r3 \
         py3-pip=24.3.1-r0 \
         python3=3.12.8-r1 \
-        rsync=3.3.0-r0 \
+        rsync=3.3.0-r1 \
         v4l-utils=1.28.1-r1 \
     \
     && curl -J -L -o /tmp/motion.tar.gz \
