@@ -24,7 +24,7 @@ RUN \
         libwebp-dev=1.4.0-r0 \
         linux-headers=6.6-r1 \
         musl-dev=1.2.5-r9 \
-        python3-dev=3.12.10-r0 \
+        python3-dev=3.12.10-r1 \
         v4l-utils-dev=1.28.1-r1 \
     \
     && apk add --no-cache \
